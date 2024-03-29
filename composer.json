@@ -1,0 +1,18 @@
+{
+  "name": "calcare/store",
+  "description": "Loja Virtual",
+  "type": "project",
+  "license": "Apache-2.0",
+  "authors": [
+    {
+      "name": "Victor Daniel",
+      "email": "victordanielgts@outlook.com"
+    }
+  ],
+
+  "autoload": {
+    "psr-4": {
+      "store\\": "app/"
+    }
+  }
+}

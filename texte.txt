@@ -1,0 +1,19 @@
+/*
+&lt; => <
+&gt; => >
+*/
+
+//$regex = "/[&lt;|%3C][a-z]+[&gt;|%3E][a-zA-Z]*[();]*[&gt;|%3E]+/";
+
+//[&gt;|%3E]+
+
+// __DIR__."/../view/html/".$NameView.".html"
+//?id=<script>alert('EsteéumataqueXSS!');</script>
+
+
+<div class='card'>
+    <img src='app/view/img/product/grey.png'/>
+    <h3>Limestone {product}</h3>
+    <p>Tamanho: {info}</p>
+    <button class='comprar'>$ Comprar</button>
+</div>

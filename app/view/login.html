@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Login-Calcare</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="app/view/css/login.css"/>
+</head>
+<body>
+    <main class="corpo">
+        <section class="login">
+            <div class="logo">
+                <img src="app/view/img/logo.jpg" id="ft-logo"/>
+            </div>
+            <form id="form-login" method="post" action="#">
+                <div class="inputs">
+                    <label for="inptcpf" id="cpf">CPF:</label>
+                    <input type="text" name="inptcpf" id="inptcpf" placeholder="Digite apenas números."/>
+                </div>
+                <div class="inputs">
+                    <label for="passwd">Password:</label>
+                    <input type="password" name="passwd" id="passwd" placeholder="Digite a senha."/>
+                </div>
+            </form>
+            <button id="iniciar">Iniciar Sessão</button>
+
+            <div class="cadastar" id="cadastrar">
+                <p>Não tem conta? Crie já a sua!</p>
+            </div>
+        </section>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="app/view/js/login.js"></script>
+</body>
+</html>

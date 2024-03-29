@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+html,body{
+    margin: 0;
+    padding: 0;
+}
+@media (min-width: 1200px) {
+    .corpo{
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+    .login{
+        display: grid;
+        justify-content: center;
+        text-align: center;
+        width: 25vw;
+        box-shadow: 1px 1px  1px 1px #7b797b;
+        padding-bottom: 1.5rem;
+        padding-top: 1.5rem;
+    }
+    .login > .logo > img{
+        width: 150px;
+        height: 150px;
+    }
+    .login > #form-login > .inputs{
+        margin-top: 0.5rem;
+    }
+    .login > #form-login > .inputs > label{
+        font-family: "Roboto", sans-serif;
+        font-style: normal;
+        color: #7b797b;
+        font-size: 1.2rem;
+    }
+    .login > #form-login > .inputs > #cpf{
+        margin-left: 3rem;
+    }
+    .login > #form-login > .inputs > input{
+        margin-left: 0.3rem;
+    }
+    .login > button{
+        font-family: "Roboto", sans-serif;
+        font-style: normal;
+        font-size: 1rem;
+        color: white;
+        background-color: black;
+        cursor: pointer;
+        margin-top: 1rem;
+    }
+    .login > button:hover{
+        background-color: #22300B;
+    }
+    .login > .cadastar > p{
+        cursor: pointer;
+    }
+}
