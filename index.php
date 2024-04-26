@@ -1,5 +1,6 @@
 <?php
 require_once "vendor/autoload.php";
+// Inicializar a SuperGlobal Session e Inicializa os Namespaces
 session_start();
 use store\http\route\router;
 use store\util\controllerchecker;
@@ -8,6 +9,7 @@ use store\http\session\cookie;
 use store\util\filechecker;
 use store\http\response\response;
 use store\controllers\controllerlogin;
+
 // Instância do router e do filechecker
 $rota = new router();
 $file = new filechecker();
@@ -33,7 +35,7 @@ else{
                 //Verificando se existe uma sessão ativa
                 if(controllerlogin::LoginSessionVerify("cpf")){
                     $Sessao = controllerlogin::Session_Datas();
-                    echo controllerindex::renderhome("Seja bem-vindo usuário ".$Sessao["user"]);
+                    echo controllerindex::renderhome("Minha conta: ".$Sessao["user"]);
                     response::send_response(200);
                 }
                 //Caso não exista, será carregado a página do index e será enviado um código http 200

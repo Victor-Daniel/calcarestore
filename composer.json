@@ -14,5 +14,8 @@
     "psr-4": {
       "store\\": "app/"
     }
+  },
+  "require": {
+    "ext-json": "*"
   }
 }

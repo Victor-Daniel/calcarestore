@@ -16,7 +16,7 @@ class controllervitrine
 
     public static function loader_showrun()
     {   $product = new dataproduct();
-        $product_info =$product->poduct_data();
+        $product_info = $product->poduct_data();
         $file = new filewriter();
         $file->writer("vitrine","");
         for($i=0;$i<count($product_info);$i++){
